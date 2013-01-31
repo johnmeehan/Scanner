@@ -1,0 +1,56 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+html,body{
+	padding:0px;
+	margin:0px;
+	height:100%;
+	width:100%;
+}
+header, section, footer, aside, nav, article, hgroup{
+	display:block; /* displays elements as a block element one under eachother*/
+}
+
+
+#wrapper{
+	min-width:900px;/*trying this out should be static below 900 and flex over*/
+	/*max-width:100%;*/  /*this was 1000px*/
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;/*1 means flexible 0 means fixed*/
+	/*margin:20px 0px;*/ 
+	background:#66CCCC;
+	-webkit-box-pack:center;/*centering the childeren / website*/
+}
+
+#headwrapper{
+	display:-webkit-box;
+	-webkit-box-orient:horizontal; 
+	box-pack:center;
+}
+
+#headerlogo{
+	box-align:start;
+	box-flex:1;
+	width:350px;
+}
+#headersearch{
+	box-align:center;
+	box-flex:3;
+	background:#FFFF00;
+	
+}
+#headercontrols{
+	box-align:end;
+	box-flex:2;
+	background:#008000;
+	width:400px;
+}
+#footer{
+	display:box;
+	box-align:center;
+	box-pack:center;
+	height:200px;
+}

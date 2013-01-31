@@ -1,0 +1,106 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+
+h1{	font:bold 20px Tahoma;}
+
+h2{font:bold 14px Tahoma;}
+
+
+header, section, footer, aside, nav, article, hgroup{
+	display:block; /* displays elements as a block element one under eachother*/
+}
+
+body{
+	width:100%;
+display:-webkit-box;/*tells it that it will be holding flexible boxes*/
+-webkit-box-pack:center;/*centering the childeren / website*/
+}
+
+
+#big_wrapper{
+	max-width:1000px;
+	
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;/*1 means flexible 0 means fixed*/
+	margin:20px 0px; 
+
+}
+
+#topwrapper{
+	width:100%;
+}
+
+#top_header{
+	background:yellow;
+	border:3px solid black;
+	padding:20px;/*space between text and the border.*/
+}
+
+#top_nav{
+	border:1px solid red;
+	background:blue;
+	color:white;
+}
+
+#top_nav li{
+display:inline-block;/*make them appear beside eachother*/
+list-style:none;
+padding: 5px;
+font: bold 14px Tahoma;
+background:#66CCCC;
+}
+
+#flexbox{
+	display:-webkit-box;
+	-webkit-box-orient:horizontal; 
+}
+
+#mainsection{
+	border:1px solid blue;
+	border-radius: 5px;
+	-webkit-box-flex:1;/*makes this section flexible*/
+	margin:20px;
+	padding:20px;
+}
+
+
+
+	
+
+#rightside{
+	border: 1px solid red;
+	border-radius: 5px;
+	width:220px;
+	margin: 20px 0px;/*20 on top 0 on bottom */
+	padding:30px;
+	background: #66CCCC;
+}
+
+#leftside{
+	border: 1px solid red;
+	border-radius: 5px;
+	width:80px;
+	margin: 20px 0px;/*20 on top 0 on bottom */
+	padding:20px;
+	background: #66CCCC;
+}
+
+#bottomfooter{
+text-align:center;/*center text*/
+padding: 20px;
+border-top:2px solid green;
+}
+
+
+article{
+	background:#66CCCC;
+	border:1px solid blue;
+	padding:20px;
+	margin-bottom: 15px;
+}
+
+article footer{text-align: right;}
